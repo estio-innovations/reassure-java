@@ -5,10 +5,22 @@ public class Student
     private String studentName;
     private int studentAge;
 
+    static String headTeacher = "Mrs Nichols";
+
     public Student(String studentName, int studentAge)
     {
         this.studentAge = studentAge;
         this.studentName = studentName;
+    }
+
+    public static String getHeadTeacher()
+    {
+        return headTeacher;
+    }
+
+    public static void setHeadTeachersName(String newName)
+    {
+        headTeacher = newName;
     }
 
     /**
@@ -17,15 +29,10 @@ public class Student
     public void describeStudent()
     {
         // to evaluate studentsAge and give an suitable year group
-        if(studentAge > 6 && studentAge <=8)
+        if(studentAge >= 5 && studentAge <=8)
         {
             System.out.println(studentName + " is in Reception 1 + 2 ");
         }
-/*        else if()
-        {
-
-        }*/
-
     }
 
 
