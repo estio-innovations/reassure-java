@@ -20,7 +20,9 @@ public class Recap
         // The head teacher now leaves and Mr Walker joins
         student2.setHeadTeachersName("Mr Walker");
 
+
         System.out.println("Headteachers name is:" + student1.getHeadTeacher());
         System.out.println("Headteachers name is:" + student3.getHeadTeacher());
+
     }
 }
