@@ -46,7 +46,7 @@ public class School
                 if(choice == 1)
                 {
                     // do what 1 does
-                    System.out.println("Option 1 selected");
+                    System.out.println("    Option 1 selected");
                     menu();
                 }
                 else if (choice == 2)
