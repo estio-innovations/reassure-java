@@ -35,7 +35,6 @@ public class Student
         }
     }
 
-
     public void setStudentName(String studentName)
     {
         // make sure a valid name has been given
@@ -47,6 +46,31 @@ public class Student
         else
         {
             this.studentName = studentName;
+        }
+    }
+
+    /******************************/
+
+    public String getStudentsName()
+    {
+        return this.studentName;
+    }
+
+    public int getStudentAge()
+    {
+        return  this.studentAge;
+    }
+
+    public void setStudentAge(int newStudentAge)
+    {
+        if(newStudentAge > 3)
+        {
+            this.studentAge = newStudentAge;
+        }
+        else
+        {
+            this.studentAge = 4;
+            System.out.println("A Student must be above 4 years old.");
         }
     }
 
