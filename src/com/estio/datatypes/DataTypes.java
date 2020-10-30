@@ -8,4 +8,12 @@ public class DataTypes
     String myString;
     ArrayList myArray;
 
+    public static void main(String[] args)
+    {
+
+
+
+
+    }
+
 }
