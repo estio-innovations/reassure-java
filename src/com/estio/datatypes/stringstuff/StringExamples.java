@@ -21,6 +21,15 @@ public class StringExamples
         System.out.print(stringWord.substring(9, 10));
         System.out.print(stringWord.substring(12, 13));
 
+        String usersInput = "Y";
 
+        if(usersInput.toLowerCase().startsWith("y"))
+        {
+
+        }
+
+        String sentence = "            How now\nBrown\nCow           ";
+
+        System.out.println(sentence.trim());
     }
 }
