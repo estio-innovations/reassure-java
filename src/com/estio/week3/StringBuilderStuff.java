@@ -65,7 +65,9 @@ public class StringBuilderStuff
 
         System.out.println(obj);
 
+        String newString = new String("hello");
         String x = "hello";
+        String xx = "hello";
         String y = "Hello".toLowerCase();
 
         System.out.println(x == y);
