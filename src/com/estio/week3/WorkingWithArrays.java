@@ -1,7 +1,10 @@
 package com.estio.week3;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class WorkingWithArrays
 {
@@ -40,8 +43,22 @@ public class WorkingWithArrays
         /**********************/
         // complete this table printing a table format
 
-        arrayListActions();
+        // arrayListActions();
+        ArrayList<String> list = new ArrayList<>();
+        list.add("hawk");
+        list.add("robin");
+        Object[] objectArray = list.toArray();
+        System.out.println(objectArray.length);     // 2
+        String[] stringArray = list.toArray(new String[0]);
+        System.out.println(stringArray.length);     // 2
 
+        System.out.println(stringArray[0]);
+        System.out.println(stringArray[1]);
+        stringArray[0] = "shell";
+        stringArray[1] = "Idris";
+
+        System.out.println(stringArray[0]);
+        System.out.println(stringArray[1]);
 
     }
 
@@ -93,7 +110,13 @@ public class WorkingWithArrays
         Integer.parseInt(number1);
 
         ArrayList<Integer> nums = new ArrayList<Integer>();
+
+        LocalDateTime date;
+
+
+
     }
+    
 }
 
 
@@ -104,6 +127,7 @@ class Member
     public Member(String MembersName)
     {
         this.MembersName = MembersName;
+        System.out.println("Member");
     }
     public String getMembersName()
     {
@@ -116,6 +140,12 @@ class GoldMember extends Member
     public GoldMember(String membersName)
     {
         super(membersName);
+        System.out.println("Gold member");
+    }
+
+    protected void describe()
+    {
+        System.out.println("Gold member!");
     }
 }
 
